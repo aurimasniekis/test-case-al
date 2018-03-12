@@ -49,4 +49,15 @@ abstract  class BaseController extends Controller
             $code
         );
     }
+
+    public function success(string $message = 'Success', int $code = 200): JsonResponse
+    {
+        return new JsonResponse(
+            [
+                'code' => $code,
+                'message' => $message
+            ],
+            $code
+        );
+    }
 }

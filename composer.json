@@ -15,7 +15,8 @@
         "symfony/orm-pack": "^1.0",
         "symfony/phpunit-bridge": "^4.0",
         "symfony/web-server-bundle": "^4.0",
-        "symfony/yaml": "^4.0"
+        "symfony/yaml": "^4.0",
+        "thruster/symfony-json-body-parser-bundle": "^1.2"
     },
     "require-dev": {
         "symfony/dotenv": "^4.0"

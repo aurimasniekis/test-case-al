@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Security\Core\User\EquatableInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
@@ -39,6 +40,18 @@ class User implements UserInterface, EquatableInterface
      * @ORM\Column(name="password", type="string", length=255)
      */
     private $password;
+
+    /**
+     * @var Todo[]|ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="App\Entity\Todo", mappedBy="user")
+     */
+    private $todos;
+
+    public function __construct()
+    {
+        $this->todos = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -124,5 +137,13 @@ class User implements UserInterface, EquatableInterface
         }
 
         return true;
+    }
+
+    /**
+     * @return Todo[]|ArrayCollection
+     */
+    public function getTodos(): ArrayCollection
+    {
+        return $this->todos;
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "78865327c59469f5150fa774c9260382",
+    "content-hash": "bf208ca269500bdbfb2b43384ce81fc1",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4045,6 +4045,61 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2018-02-19T20:08:53+00:00"
+        },
+        {
+            "name": "thruster/symfony-json-body-parser-bundle",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThrusterIO/symfony-json-body-parser-bundle.git",
+                "reference": "8fe490a726df7711d2428bfc8993ab40ea8621f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThrusterIO/symfony-json-body-parser-bundle/zipball/8fe490a726df7711d2428bfc8993ab40ea8621f5",
+                "reference": "8fe490a726df7711d2428bfc8993ab40ea8621f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "symfony/framework-bundle": "~2.3|~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thruster\\Bundle\\SymfonyJsonBodyParserBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aurimas Niekis",
+                    "email": "aurimas@niekis.lt"
+                }
+            ],
+            "description": "Thruster SymfonyJsonBodyParserBundle Bundle",
+            "homepage": "https://thruster.io",
+            "keywords": [
+                "bundle",
+                "json",
+                "parser",
+                "request",
+                "symfony",
+                "symfony-json-body-parser-bundle",
+                "thruster"
+            ],
+            "time": "2018-01-31T18:36:34+00:00"
         },
         {
             "name": "twig/twig",
