@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  * @package App\Controller
  * @author  Aurimas Niekis <aurimas@niekis.lt>
  */
-abstract  class BaseController extends Controller
+abstract class BaseController extends Controller
 {
     /**
      * {@inheritDoc}
@@ -32,8 +32,8 @@ abstract  class BaseController extends Controller
     {
         return new JsonResponse(
             [
-                'code' => $code,
-                'message' => $message
+                'code'    => $code,
+                'message' => $message,
             ],
             $code
         );
@@ -43,8 +43,8 @@ abstract  class BaseController extends Controller
     {
         return new JsonResponse(
             [
-                'code' => $code,
-                'message' => $message
+                'code'    => $code,
+                'message' => $message,
             ],
             $code
         );
@@ -54,8 +54,8 @@ abstract  class BaseController extends Controller
     {
         return new JsonResponse(
             [
-                'code' => $code,
-                'message' => $message
+                'code'    => $code,
+                'message' => $message,
             ],
             $code
         );

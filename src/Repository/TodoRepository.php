@@ -21,19 +21,20 @@ class TodoRepository extends BaseRepository
                 'user' => $this->getEntityManager()->getPartialReference(
                     User::class,
                     $userId
-                )
+                ),
             ]
         );
     }
+
     public function findWithUserId(int $id, int $userId): ?Todo
     {
         return $this->findOneBy(
             [
-                'id' => $id,
+                'id'   => $id,
                 'user' => $this->getEntityManager()->getPartialReference(
                     User::class,
                     $userId
-                )
+                ),
             ]
         );
     }

@@ -57,6 +57,7 @@ class User implements UserInterface, EquatableInterface
     {
         return $this->id;
     }
+
     /**
      * {@inheritDoc}
      */
